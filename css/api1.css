@@ -21,14 +21,6 @@ body {
   text-align: center;
 }
 
-#cavaleiro{
-  top: 0;
-  position:fixed;
-  width: 70vh;
-  height: 30vh;
-  left: 66vh;  
-}
-
 #imgplaca{
   top: 0;
   position:fixed;
@@ -80,7 +72,7 @@ h1 {
 }
 
 .block:hover .layer {
-  background-color: #651b62;
+  background-color: #5c0a12;
   opacity: .8;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -184,7 +176,7 @@ h1 {
 }
 
 .ua:hover .fa {
-  color: #17BEBB;
+  color: #5c0a12;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -210,7 +202,7 @@ h1 {
   transition:border-color 0.3s ease-out;
 }
 
-.arrow:hover{border-color:#a12b9d}
+.arrow:hover{border-color:#eb4758}
 
 .arrow-left{
   left:20px;

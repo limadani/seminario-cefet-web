@@ -1,0 +1,80 @@
+html,
+body {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+  margin: 0;
+  padding: 0;
+  background-image: url("http://i.imgur.com/d74M4rO.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#imgplaca{
+  top: 0;
+  position:fixed;
+  width: 60vh;
+  height: 30vh;
+  left: 10vh;
+}
+h1 {
+  z-index: 1;
+  top: 17vh ;
+  color: #fff;
+  left: 30vh;
+  position:fixed;
+}
+
+
+/*========== MENU =========*/
+#menu {
+  top: 30vh;
+  height: 100px;
+  width: 630px;
+  overflow: hidden;
+  margin: 50px auto;
+  text-align: center;
+  position: fixed;
+  left: 2vh;
+}
+
+#menu ul li {
+  float: left;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+/* Menu Link Styles */
+#menu ul a {
+  display: block;
+  background: #5c0a12;
+  color: #fff;
+  height: 100px;
+  width: 200px;
+  font: lighter 1em/100px 'Open Sans Condensed', Arial, Helvetica, Geneva, sans-serif;
+  text-decoration: none;
+  transition: all .35s ease-in-out;
+}
+
+/* Secondary Link Styles */
+#menu ul a:nth-of-type(even) {
+  text-shadow: 0 0 6px #fff;
+  background: #333;
+  color: white;
+}
+
+/* Hover Slide */
+#menu ul li:hover :first-child {
+  margin-top: -100px;
+}

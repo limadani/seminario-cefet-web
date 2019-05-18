@@ -3,8 +3,7 @@ body {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
   margin: 0;
   padding: 0;
-  /*background-color: #2B2D42;*/
-  background-image: url("https://i.ytimg.com/vi/GrAav0i9jtg/maxresdefault.jpg"),url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/250758/frame.png");
+  background-image: url("https://img00.deviantart.net/f247/i/2014/224/f/6/castle_gate_by_jonathandufresne-d7uxbmw.jpg"),url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/250758/frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -12,6 +11,7 @@ body {
   position: relative;
   overflow: hidden;
   font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 .container {
@@ -24,18 +24,25 @@ body {
 #imgplaca{
   top: 0;
   position:fixed;
-  width: 50vh;
+  width: 70vh;
   height: 30vh;
-  left: 78vh;
+  left: 66vh;
+}
+h1 {
+  z-index: 1;
+  top: 17vh ;
+  color: #fff;
+  left: 76vh;
+  position:fixed;
 }
 
+
 .block {
-  top: 10vh;
+  top: 20vh;
   width: 10%;
   height: 300px;
   display: inline-block;
   background-image: url("https://image.freepik.com/vetores-gratis/prancha-de-madeira-de-vetor-marrom_41929-228.jpg");
-  background-color: #E83F6F;
   cursor: pointer;
   position: relative;
   -webkit-transition: width .5s ease-in-out, background-image .5s ease-in-out;
@@ -47,7 +54,6 @@ body {
 }
 
 .block:hover {
-  background-color: #2274A5;
   width: 30%;
   -webkit-transition: width .5s ease-in-out, background-color .5s ease-in-out;
   -moz-transition: width .5s ease-in-out, background-color .5s ease-in-out;
@@ -66,7 +72,7 @@ body {
 }
 
 .block:hover .layer {
-  background-color: #2274A5;
+  background-color: #5c0a12;
   opacity: .8;
   -webkit-transition: opacity .5s ease-in-out;
   -moz-transition: opacity .5s ease-in-out;
@@ -91,17 +97,7 @@ body {
   margin-left: 5%;
 }
 
-h1 {
-  color: #fff;
-}
 
-#h1text{
-  top: 0;
-  position:fixed;
-  width: 50vh;
-  height: 30vh;
-  left: 78vh;
-}
 
 
 .image.fixed {
@@ -180,7 +176,7 @@ h1 {
 }
 
 .ua:hover .fa {
-  color: #17BEBB;
+  color: #5c0a12;
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -191,4 +187,29 @@ h1 {
   -ms-transition: all 1s ease;
   -o-transition: all 1s ease;
   transition: all 1s ease;
+}
+
+/*===========SETAS=================*/
+.arrow{
+  width: 35px;
+  height: 35px;
+  position:absolute;
+  top:70%;
+  z-index:1;
+  border-top:5px solid #fff;
+  border-right:5px solid #fff;
+  cursor:pointer;
+  transition:border-color 0.3s ease-out;
+}
+
+.arrow:hover{border-color:#eb4758}
+
+.arrow-left{
+  left:20px;
+  transform:rotate(225deg);
+}
+
+.arrow-right{
+  right:20px;
+  transform:rotate(45deg);
 }

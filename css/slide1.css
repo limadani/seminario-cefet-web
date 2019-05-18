@@ -1,0 +1,194 @@
+html,
+body {
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
+  margin: 0;
+  padding: 0;
+  /*background-color: #2B2D42;*/
+  background-image: url("https://i.ytimg.com/vi/GrAav0i9jtg/maxresdefault.jpg"),url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/250758/frame.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+  text-align: center;
+}
+
+#imgplaca{
+  top: 0;
+  position:fixed;
+  width: 50vh;
+  height: 30vh;
+  left: 78vh;
+}
+
+.block {
+  top: 10vh;
+  width: 10%;
+  height: 300px;
+  display: inline-block;
+  background-image: url("https://image.freepik.com/vetores-gratis/prancha-de-madeira-de-vetor-marrom_41929-228.jpg");
+  background-color: #E83F6F;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: width .5s ease-in-out, background-image .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, background-image .5s ease-in-out;
+  -ms-transition: width .5s ease-in-out, background-image .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, background-image .5s ease-in-out;
+  transition: width .5s ease-in-out, background-image .5s ease-in-out;
+  text-align: center;
+}
+
+.block:hover {
+  background-color: #2274A5;
+  width: 30%;
+  -webkit-transition: width .5s ease-in-out, background-color .5s ease-in-out;
+  -moz-transition: width .5s ease-in-out, background-color .5s ease-in-out;
+  -ms-transition: width .5s ease-in-out, background-color .5s ease-in-out;
+  -o-transition: width .5s ease-in-out, background-color .5s ease-in-out;
+  transition: width .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+.block:hover .img-p {
+  opacity: 1;
+  -webkit-transition: opacity .5s .51s ease-in-out;
+  -moz-transition: opacity .5s .51s ease-in-out;
+  -ms-transition: opacity .5s .51s ease-in-out;
+  -o-transition: opacity .5s .51s ease-in-out;
+  transition: opacity .5s .51s ease-in-out;
+}
+
+.block:hover .layer {
+  background-color: #2274A5;
+  opacity: .8;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -ms-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+}
+
+.img-p {
+  position: absolute;
+  font-size: 16px;
+  opacity: 0;
+  color: #FFF;
+  text-align: left;
+  line-height: 1.6em;
+}
+
+.p-container {
+  width: 80%;
+  position: relative;
+  top: 30%;
+  margin-left: 5%;
+}
+
+h1 {
+  color: #fff;
+}
+
+#h1text{
+  top: 0;
+  position:fixed;
+  width: 50vh;
+  height: 30vh;
+  left: 78vh;
+}
+
+
+.image.fixed {
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+     .container {
+       width: 100%;
+       margin: 0 auto;
+     }
+     .block {
+       width: 100%;
+       height: 200px;
+        -webkit-transition: height .5s ease-in-out;
+          -moz-transition: height .5s ease-in-out;
+           -ms-transition: height .5s ease-in-out;
+            -o-transition: height .5s ease-in-out;
+               transition: height .5s ease-in-out;
+     }
+
+     .block:hover {
+       width: 100%;
+       height: 400px;
+       -webkit-transition: height .5s ease-in-out;
+          -moz-transition: height .5s ease-in-out;
+           -ms-transition: height .5s ease-in-out;
+            -o-transition: height .5s ease-in-out;
+               transition: height .5s ease-in-out;
+     }
+   }
+
+
+@media (min-width: 768px) {
+     .block {
+       width: 15%;
+     }
+   }
+
+   @media (min-width: 992px) {
+     .block {
+       width: 10%;
+     }
+   }
+
+.ua {
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  font-size: 2em;
+}
+
+.fa {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.ua:hover .fa {
+  color: #17BEBB;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}

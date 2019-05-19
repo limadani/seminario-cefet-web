@@ -97,9 +97,6 @@ h1 {
   margin-left: 5%;
 }
 
-
-
-
 .image.fixed {
   background-attachment: fixed;
   background-position: center center;
@@ -193,7 +190,7 @@ h1 {
 .arrow{
   width: 35px;
   height: 35px;
-  position:absolute;
+  position:fixed;
   top:70%;
   z-index:1;
   border-top:5px solid #fff;
@@ -202,7 +199,9 @@ h1 {
   transition:border-color 0.3s ease-out;
 }
 
-.arrow:hover{border-color:#eb4758}
+.arrow:hover{
+	border-color:#eb4758	
+}
 
 .arrow-left{
   left:20px;

@@ -1,9 +1,10 @@
+
+
 html,
 body {
   @import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700);
   margin: 0;
   padding: 0;
-  background-image: url("https://img00.deviantart.net/f247/i/2014/224/f/6/castle_gate_by_jonathandufresne-d7uxbmw.jpg"),url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/250758/frame.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -14,37 +15,39 @@ body {
 
 }
 
-.container {
-  position: relative;
-  margin-top: 100px;
-  width: 100%;
-  text-align: center;
+#api2 {
+  background-image: url("https://img00.deviantart.net/f247/i/2014/224/f/6/castle_gate_by_jonathandufresne-d7uxbmw.jpg");
 }
+
+#api1 {
+  background-image: url("https://i.ytimg.com/vi/GrAav0i9jtg/maxresdefault.jpg");
+}
+
 
 #imgplaca{
   top: 0;
   position:fixed;
-  width: 70vh;
-  height: 30vh;
-  left: 66vh;
+  width: 25%;
+  height: 30%;
+  left: 35%;
 }
 h1 {
   z-index: 1;
-  top: 17vh ;
+  top: 20%;
   color: #fff;
-  left: 76vh;
+  left: 40%;
   position:fixed;
 }
 
-
 .block {
-  top: 20vh;
+  top:40%;
+  left: 25%;
+  position: relative;
   width: 10%;
   height: 300px;
   display: inline-block;
   background-image: url("https://image.freepik.com/vetores-gratis/prancha-de-madeira-de-vetor-marrom_41929-228.jpg");
   cursor: pointer;
-  position: relative;
   -webkit-transition: width .5s ease-in-out, background-image .5s ease-in-out;
   -moz-transition: width .5s ease-in-out, background-image .5s ease-in-out;
   -ms-transition: width .5s ease-in-out, background-image .5s ease-in-out;
@@ -95,17 +98,6 @@ h1 {
   position: relative;
   top: 30%;
   margin-left: 5%;
-}
-
-
-
-
-.image.fixed {
-  background-attachment: fixed;
-  background-position: center center;
-  -webkit-background-size: 100% auto;
-  -o-background-size: 100% auto;
-  background-size: 100% auto;
 }
 
 .layer {
@@ -202,7 +194,9 @@ h1 {
   transition:border-color 0.3s ease-out;
 }
 
-.arrow:hover{border-color:#eb4758}
+.arrow:hover{
+	border-color:#eb4758
+}
 
 .arrow-left{
   left:20px;

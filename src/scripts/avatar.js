@@ -1,6 +1,7 @@
 var myGamePiece;
 
-function start() {	
+function start() {
+
     myGamePiece = new component(300, 300, "images/agateemieliD.gif", (screen.width / 5), (screen.height / 2), "image");
     myGameArea.start();
 }
@@ -39,7 +40,7 @@ function component(width, height, color, x, y, type) {
     this.x = x;
     this.y = y;
     this.update = function() {
-        ctx = myGameArea.context;
+        let ctx = myGameArea.context;
         if (type == "image") {
             ctx.drawImage(this.image,
                 this.x,
@@ -60,7 +61,8 @@ function updateGameArea() {
     myGameArea.clear();
     myGamePiece.speedX = 0;
     myGamePiece.speedY = 0;
-    if (myGameArea.key && myGameArea.key == 37) {		
+    if (myGameArea.key && myGameArea.key == 37) {	
+
         myGamePiece.image.src = "images/agateemieliE.gif";
         myGamePiece.speedX = -1;
     }

@@ -23,6 +23,19 @@ body {
   background-image: url("https://i.ytimg.com/vi/GrAav0i9jtg/maxresdefault.jpg");
 }
 
+#exemplo{
+  background-image: url("https://image.winudf.com/v2/image/Y29tLmJpbGl5LmluY29ycC5NZWRpZXZhbEZhbnRhc3lUb3duTWFwLk1pbmVjcmFmdFBFX3NjcmVlbl80XzE1MjY0NTU4MDdfMDAy/screen-4.jpg?h=800&fakeurl=1&type=.jpg");
+}
+
+#avatar{
+  height: 40%;
+  width: auto;
+  top: 57%;
+  left: 45%;
+  z-index: 1;
+  position: fixed;
+}
+
 
 #imgplaca{
   top: 0;

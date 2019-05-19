@@ -191,18 +191,16 @@ em sala de aula, além de divertido.
 
 ## Instruções de Instalação
 
-Após copiar o repositório deve-se executar as seguintes dependências:
+Após copiar o repositório, deve-se executar as seguintes dependências:
 
-1. Install the required NPM modules for building the project
+1. Instale os módulos NPM, necessários para construir o projeto:
 
         npm install
 
-1. Install gulp globally
+1. Instale gulp:
 
         npm install gulp -g
 
-1. Run the gulp server
+1. Execute o servidor
 
         gulp dev
-
-<img src="http://i.imgur.com/Y2yafBv.png" width="304px" height="366xpx" />

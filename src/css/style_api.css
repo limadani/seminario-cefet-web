@@ -30,8 +30,8 @@ body {
 #avatar{
   height: 40%;
   width: auto;
-  top: 57%;
-  left: 45%;
+  top: 55%;
+  left: 75%;
   z-index: 1;
   position: fixed;
 }

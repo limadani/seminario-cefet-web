@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/medieval-castles/66/5-512.png"
+    <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/medieval-castles/66/5-512.png">
   </head>
   </body>
     <h1> WEBLOT </h1>
@@ -20,7 +20,18 @@
       </div>
 
       <map id="map"></map>
-
-    <script src="scripts/localizacao.js"></script>
   </body>
+  <script src="scripts/localizacao.js"></script>
+  <script>
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./service-worker.js', { scope: '/' })
+        .then(function(registration) {
+              console.log('Service Worker Registered');
+        });
+
+      navigator.serviceWorker.ready.then(function(registration) {
+         console.log('Service Worker Ready');
+      });
+    }
+  </script>
 </html>

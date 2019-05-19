@@ -186,3 +186,23 @@ e contemplada no código fonte.
 
 Também vale pontos fazer um exemplo bonito, usando várias coisas que vimos
 em sala de aula, além de divertido.
+
+# APIs Service Worker Push
+
+## Instruções de Instalação
+
+Após copiar o repositório deve-se executar as seguintes dependências:
+
+1. Install the required NPM modules for building the project
+
+        npm install
+
+1. Install gulp globally
+
+        npm install gulp -g
+
+1. Run the gulp server
+
+        gulp dev
+
+<img src="http://i.imgur.com/Y2yafBv.png" width="304px" height="366xpx" />

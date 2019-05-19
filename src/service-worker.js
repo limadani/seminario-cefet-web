@@ -11,7 +11,7 @@ self.addEventListener('push', function(event) {
   console.log('Received push');
   let notificationTitle = 'Mensagem do Rei William Wonka Wilkinson!';
   const notificationOptions = {
-    body: 'Thanks for sending this push msg.',
+    body: 'Vamos atacar o Príncipe Heitor Pascoal, aquele calhorda!',
     icon: './images/king.gif',
     badge: './images/badge-72x72.png',
     tag: 'simple-push-demo-notification',

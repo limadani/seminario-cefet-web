@@ -191,7 +191,7 @@ em sala de aula, além de divertido.
 
 ## Instruções de Instalação
 
-Após copiar o repositório deve-se executar as seguintes dependências:
+Após copiar o repositório, deve-se executar as seguintes dependências:
 
 1. Instale os módulos NPM, necessários para construir o projeto:
 

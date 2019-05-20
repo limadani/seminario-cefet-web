@@ -52,6 +52,11 @@ pre {
   color: #222222;
 }
 
+.codeomited{
+  background-color: transparent;
+  color: transparent;
+}
+
 .center {
   text-align: center;
 }
@@ -70,13 +75,11 @@ pre {
 
 .error-message-container {
   opacity: 0;
-
   transition:opacity 0.5s;
 }
 
 .mdl-switch {
   width: auto;
-
   span {
     position: fixed;
     left: 30%;
@@ -87,7 +90,6 @@ pre {
 
 .switchexemplo {
   width: auto;
-
   span {
     position: fixed;
     left: 30%;
@@ -117,7 +119,7 @@ pre {
 
 .snippet-code code:hover::before {
   display: inline-block;
-  content: 'click to copy';
+  content: 'clique para copiar';
   color: rgba(0,0,0,.5);
   font-size: 13px;
   background-color: rgba(0,0,0,.1);
@@ -129,13 +131,13 @@ pre {
 }
 
 .snippet-code code.copied::before {
-  content: 'copied';
+  content: 'copiado';
   color: rgba(255,255,255,.5);
   background-color: rgba(0,0,0,.6);
 }
 
 .snippet-code code.nosupport::before {
-  content: "browser not supported :'(";
+  content: "browser não suporta:'(";
   color: rgba(255,255,255,.5);
   background-color: rgba(0,0,0,.6);
 }

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Simple Push Demo</title>
+  <title>Exemplo Push</title>
 
 
 
@@ -20,7 +20,6 @@
   <link rel="stylesheet" href="./css/main.css">
 </head>
 <body id="exemplo" >
-  <img id="imgplaca" src="https://3.bp.blogspot.com/-6PXw1umz6HY/U0mepcHmJsI/AAAAAAAAK6w/0_JZcwJRDa8/s1600/www.png-free.blogspot.com.br+plaquinha+madeira.png">
   <img id="avatar" src="images/agateemieliD.gif">
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <a href="api2.html" class="arrow arrow-left" title="Anterior"></a>
@@ -29,80 +28,42 @@
       <div class="push-switch-container js-push-switch-container">
         <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect js-push-toggle-switch" for="switch-2">
           <input type="checkbox" id="switch-2" class="mdl-switch__input" disabled>
-          <span class="mdl-switch__label">Ativar Push Notifications</span>
+          <span class="mdl-switch__label">Ativar Notificações Push</span>
         </label>
       </div>
       <div class="content-overlap-wrapper">
         <div class="send-push-options js-send-push-options">
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label payload-textfield js-payload-textfield-container hidden">
             <input class="mdl-textfield__input js-payload-textfield" type="text" id="payload-textfield">
-            <label class="mdl-textfield__label" for="payload-textfield">Adicionar Payload Text</label>
+            <label class="mdl-textfield__label" for="payload-textfield">Escreva sua mensagem aqui</label>
           </div>
 
           <p class="center js-xhr-button-container">
             <button class="xhr-button js-send-push-button mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect">
-              Enviar uma Push via XHR
+              Enviar mensagem ao rei
             </button>
           </p>
 
-          <hr />
-<!-- 
-          <h4>This Browsers Subscription</h4>
-          <p>Below is your current subscription.</p> -->
           <pre class="snippet-code"><code class="code-example js-subscription-json language-json"></code></pre>
-
-         <!--  <hr />
-
-          <h4>Supported Content Encodings </h4>
-          <p>A change to the web push spec moves browsers from "aesgcm" to
-            "aes128gcm" content encoding.</p>
-          <p>To determine which is supported the current browser you can view
-            <code>PushManager.supportedContentEncodings</code>.</p>
-
-          <p>Below is the list of supported encodings.</p> -->
-
           <pre class="snippet-code"><code class="code-example js-supported-content-encodings language-json"></code></pre>
 
           <div class="js-curl-container">
             <hr />
-            <h4>CURL Command</h4>
-            <p class="js-curl-copy-msg">Copy and paste the following CURL
-            command into your terminal to send a push message to your
-            browser.</p>
+            <h4>Comando CURL</h4>
+            <p class="js-curl-copy-msg">Copie e cole o seguinte comando CURL
+            em seu terminal para enviar uma mensagem para o seu navegador.</p>
             <p class="js-curl-error-msg"></p>
-
-            <pre class="snippet-code"><code class="code-example js-curl-code language-markup"></code></pre>
+            <pre class="snippet-code"><code class="code-example js-curl-code"></code></pre>
           </div>
 
-          <div class="js-api-request">
-            <hr />
-            <h4>Push from a Server</h4>
-
-            <p>To send a push message to this page, you need to make a network
-            request from your server with the following pieces of info (this
-            is essentially a breakdown of the CURL command above):</p>
-
-            <h5>Endpoint URL</h5>
-
+          <div>
             <pre><code class="js-endpoint"></code></pre>
-
-            <h5>Headers</h5>
-
-            <div class="js-headers-list">
-            </div>
-
-            <h5>Request Body</h5>
-
-            <p class="small-margin"><strong>Type</strong>: <span class="js-body-format"></span></p>
-
-            <p  class="small-margin"><strong>Content</strong>: <span class="js-body-content"></span></p>
-            <hr />
+            <div class="js-headers-list" ></div>
+            <p>Tipo: <span class="js-body-format"></span></p>
+            <p>Conteúdo: <span class="js-body-content"></span></p>
           </div>
-
-
         </div>
         <div class="error-message-container js-error-message-container">
-          <h1 class="error-title js-error-title"></h1>
           <p class="error-message js-error-message"></p>
         </div>
       </div>
@@ -126,10 +87,6 @@
   <script src="./scripts/push-client.js"></script>
   <script src="./scripts/app-controller.js"></script>
 
-  <!--
-  <script src="./scripts/encryption/encryption-helper.js"></script>
-  <script src="./scripts/encryption/encryption-factory.js"></script>
-  -->
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

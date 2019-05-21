@@ -18,7 +18,7 @@ body {
   height: 40%;
   width: auto;
   top:55%;
-  left: 75%;
+  left: 68%;
   z-index: 1;
   position: fixed;
 }
@@ -26,15 +26,15 @@ body {
 #imgplaca{
   top: 0;
   position:fixed;
-  width: 20%;
-  height: 25%;
-  left: 10%;
+  width: 30%;
+  height: auto;
+  left: 5%;
 }
 h1 {
   z-index: 1;
   top: 15%;
   color: #fff;
-  left: 17%;
+  left: 10%;
   position:fixed;
   font-family:'Matura MT Script Capitals', sans-serif;
 }
@@ -72,7 +72,7 @@ container .localizacao{
   margin: 50px auto;
   text-align: center;
   position: fixed;
-  left: 8%;
+  left: 1%;
 }
 
 #menu ul li {

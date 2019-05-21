@@ -1,27 +1,55 @@
-/*
- * Web Starter Kit
- *
- * Multi-screen layout styles for your page. Brought to you by the
- * Web Starter Kit team.
- *
- */
-
-
-
 main {
   max-width: 480px;
   min-width: 64px;
   width: 100%;
-
   padding: 32px;
   margin: 0 auto;
-
   box-sizing: border-box;
+  color:#fff;
 }
 
 pre {
   white-space: pre-wrap;
   word-wrap: break-word;
+}
+
+#avatar{
+  height: 40%;
+  width: auto;
+  top: 49%;
+  left: 75%;
+  z-index: 1;
+  position: fixed;
+}
+
+.faixa {
+	width: 40%;
+	height: auto;
+	background-image: url("https://c7.uihere.com/files/786/87/701/wood-desktop-wallpaper-high-definition-television-wallpaper-wood-texture.jpg");
+
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+#push{
+  z-index: 1;
+  top: 19%;
+  color: #fff;
+  left:9%;
+  font-size: 120%;
+  position:fixed;
+}
+
+#imgplaca2{
+  top: 0;
+  position:fixed;
+  width: 25%;
+  height: 30%;
+  left: 3%;
 }
 
 .js-headers-list p, .small-margin {
@@ -40,14 +68,10 @@ pre {
 
 .code-example {
   display: block;
-
   width: 100%;
-
   word-break: break-all;
-
   padding: 16px;
   box-sizing: border-box;
-
   background-color: #eeeeee;
   color: #222222;
 }
@@ -67,15 +91,13 @@ pre {
 
 .send-push-options {
   margin-top: 32px;
-
   opacity: 0;
-
-  transition:opacity 0.5s;
+  transition:opacity 8s;
 }
 
 .error-message-container {
   opacity: 0;
-  transition:opacity 0.5s;
+  transition:opacity 0.8s;
 }
 
 .mdl-switch {
@@ -83,7 +105,7 @@ pre {
   span {
     position: fixed;
     left: 30%;
-	z-index: 1;
+	  z-index: 1;
     margin-left: 24px;
   }
 }
@@ -93,8 +115,8 @@ pre {
   span {
     position: fixed;
     left: 30%;
-	top: 0;
-	z-index: 1;
+	  top: 0;
+	  z-index: 1;
     margin-left: 24px;
   }
 }
@@ -120,13 +142,12 @@ pre {
 .snippet-code code:hover::before {
   display: inline-block;
   content: 'clique para copiar';
-  color: rgba(0,0,0,.5);
+  color: transparent;
   font-size: 13px;
   background-color: rgba(0,0,0,.1);
   border-top-left-radius: 5px;
   position: absolute;
   right: 0;
-  bottom: 0;
   padding: 3px 10px;
 }
 

@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="https://cdn1.iconfinder.com/data/icons/medieval-castles/66/5-512.png"
   </head>
   <body id="api2">
-    <h1> API Push Notification</h1>
+    <h1>API Push</h1>
       <img id="imgplaca" src="https://3.bp.blogspot.com/-6PXw1umz6HY/U0mepcHmJsI/AAAAAAAAK6w/0_JZcwJRDa8/s1600/www.png-free.blogspot.com.br+plaquinha+madeira.png">
       <a href="api1.html" class="arrow arrow-left" title="Anterior"></a>
       <a href="push.html" class="arrow arrow-right" title="Próximo"></a>
@@ -15,37 +15,11 @@
         <div class="layer"></div>
         <div class="p-container">
           <p class="img-p">
-            slide 1
-          </p>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="layer"></div>
-        <div class="p-container">
-
-          <p class="img-p">
-            slide 2
-          </p>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="layer"></div>
-        <div class="p-container">
-
-          <p class="img-p">
-            slide 3
-          </p>
-        </div>
-      </div>
-
-      <div class="block">
-        <div class="layer"></div>
-        <div class="p-container">
-
-          <p class="img-p">
-            slide 4
+            <u>Funcionalidade</u><br>
+            Possibilita que aplicações web recebam mensagens enviadas a elas de um servidor,
+            indepententemente de estarem ou não em primeiro plano, ou até mesmo carregada,
+            em um agente de usuário.
+            <a href="https://cdn-images-1.medium.com/max/1600/0*htNkBSn7c8epM1GU.jpg">Exemplo de Notificação Push</a>
           </p>
         </div>
       </div>
@@ -54,7 +28,48 @@
         <div class="layer"></div>
         <div class="p-container">
           <p class="img-p">
-            slide 5
+            <u>Características importantes</u><br>
+            - Necessita de um service worker ativo, para receber mensagens push.<br>
+            - Cada assinatura é única para um service worker.<br>
+            - Endpoint para a assinatura => URL única, mantida em segredo<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="layer"></div>
+        <div class="p-container">
+          <p class="img-p">
+            <u>Uso de recursos</u><br>
+            - Ativação de um service worker para entregar mensagens push: <br>
+            pode resultar em um aumento de uso de recursos, particularmente de bateria.<br>
+          </p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="layer"></div>
+        <div class="p-container">
+          <p class="img-p">
+          <u>Uso de recursos</u><br>
+          => <u>Firefox:</u> permite um número limitado (cota) de mensagens push
+          para serem enviadas para uma aplicação *.<br>
+          => <u>Chrome:</u> não aplica nenhum limite, mas requer que cada mensagem
+          push exiba uma notificação.
+          </p>
+        </div>
+      </div>
+
+      <div class="block">
+        <div class="layer"></div>
+        <div class="p-container">
+          <p class="img-p">
+            <u>Compatibilidade de navegadores</u><br>
+            - Edge v17+ <br>
+            - Firefox v44+ <br>
+            - Chrome v44+ <br>
+            - Opera v42+ <br>
+            <a href="https://caniuse.com/#feat=push-api">Compatibilidade Can I use</a>
           </p>
         </div>
       </div>
